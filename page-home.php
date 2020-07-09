@@ -4,7 +4,11 @@
 	mv
 **************************************** -->
 <div class="mv_wrap">
-	<img class="yasu" src="<?php bloginfo('template_directory'); ?>/img/webdara.png" alt="">
+	<!-- <img class="yasu" src="<?php bloginfo('template_directory'); ?>/img/webdara.png" alt=""> -->
+	<div class="mv_greek">
+		<div class="mvg_mds">Webノート</div>
+		<div class="mvg_sub">HP制作してて、色々悩んだことを<br />備忘録変わりに書き留めるサイト</div>
+	</div>
 
 	<ul class="slick02">
 		<li>

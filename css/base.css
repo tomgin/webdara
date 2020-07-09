@@ -2,7 +2,10 @@
   font-style: normal;
   font-weight: normal;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 table {
   border-collapse: collapse;
