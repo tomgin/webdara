@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+    bxslider_矢印と丸ドットカスタマイズ
+--------------------------------------------*/
+
+/*基本、imgは100%で!*/
+.bxslider li img{
+    width: 100%;
+}
+/*スライド矢印の基準を設定*/
+.bx-controls{
+    position: relative;
+}
+/*スライド矢印_ボタン設定*/
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next{
+    position: absolute;
+    z-index: 998; 
+    top: -100px;
+    /*デフォルトでは「prev」の文字が出るので、透明にして消してる*/
+    color: transparent;
+}
+.bx-wrapper .bx-prev{
+    left: -40px;
+    background: url(../img/a_prev.png) no-repeat center center;
+}
+
+.bx-wrapper .bx-next{
+    right: -40px;
+    background: url(../img/a_next.png) no-repeat center center;
+}
+/*ページャーの丸ドット*/
+.bx-wrapper .bx-pager{
+    position: absolute;
+    /* widthは個別に設定らしい */
+    width: 900px;
+    padding-top: 1.5em; 
+    text-align: center;
+}
+
+.bx-wrapper .bx-pager-item{
+    display: inline-block;
+    margin: 0 .8%;
+}
+
+.bx-wrapper .bx-pager-item a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    color: transparent;
+    border: solid 2px #483933; 
+    border-radius: 50%;
+    background: #fff;
+}
+
+.bx-wrapper .bx-pager-item a.active{
+    background: #483933;
+}
+

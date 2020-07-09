@@ -1,0 +1,1742 @@
+@charset "UTF-8";
+/* Theme Name: webdara */
+
+* {font-style:normal ; font-weight: normal ; margin:0 ; padding:0;}
+table {border-collapse:collapse ; border-spacing:0;}
+img {border:0 ; vertical-align : middle;}
+a{text-decoration: none; color: #000;}
+ul,ol,li { list-style:none;}
+
+body,h1,h2,h3,h4,h5,h6{
+/*font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;*/
+/*font-family: "Times New Roman", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;*/
+font-family: source-han-serif-japanese, serif;
+font-weight: 300;
+font-style: normal;
+}
+/*HTML5_block*/
+header, section, footer, aside, nav, article, figure, hgroup {
+margin:0 ; padding:0 ; display: block;
+}
+/*firefox*/
+html {
+	overflow-y:scroll;
+	font-size: 62.5%; line-height: 1.3;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+.clfix:after {
+	height: 0; visibility: hidden; content: ".";
+	display: block; clear: both;
+}
+.img100{width: 100% ; display: block;}
+
+.mincho{
+    font-family: YuMincho, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.goshi{
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", "Meiryo", sans-serif;
+}
+
+/*-------------------------------------------
+	adds
+--------------------------------------------*/
+.w00 , .w01{
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.w01{
+	margin-top: 80px;
+}
+.fixed_wrap .w01{
+	margin-top: 0;
+}
+
+.ymds01{
+	font-size: 26px;
+	text-align: center;
+}
+.yp , .yp2{
+	color: #595757;
+	text-align: center;
+	line-height: 1.6;
+}
+.yp{
+	font-size: 19px;
+}
+.yp2{
+	font-size: 23px;
+	margin-bottom: 20px;
+}
+
+.mtm{
+	position: relative;
+	top: 38px;
+}
+.mtm2{
+	position: relative;
+	top: 29px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+/*-------------------------------------------
+	固定バナー
+--------------------------------------------*/
+.fz_btn_wrap{
+	position: fixed;
+	top: 80px;
+	right: 0px;
+	z-index: 1000;
+}
+img.bt01 , img.bt02 , img.bt03{
+	position: absolute;
+	right: -5px;
+	z-index: 1000;
+}
+img.bt01{
+	top: 20px;
+}
+img.bt02{
+	top: 190px;
+}
+/*img.bt03{
+	top: 360px;
+}*/
+
+.fz_btn{
+	background: url('img/mv-bt03.png') left top no-repeat;
+	width: 110px;
+	height: 279px;
+	position: absolute;
+	right: -45px;
+	z-index: 1000;
+	top: 360px;
+
+}
+.fsize{
+	position: relative;
+	width: 100px;
+	right: -16px;
+	top: 157px;
+}
+.fzz , .fzz2{
+	display: block;
+	width: 40px;
+	/*margin: 0 auto;*/
+	padding: 5px 0;
+	font-size: 14px;
+	text-align: center;
+}
+.fzz{
+	background-color: #fff;
+	color: #87623D;
+	border: 1px solid #87623D;
+}
+.textresizer-active {
+	background-color: #87623D;
+	color: #fff;
+	border: 1px solid #87623D;
+}
+
+/*-------------------------------------------
+	header
+--------------------------------------------*/
+.header_wrap{
+	background-color: #fff;
+	padding: 20px 0;
+	box-shadow: 1px 1px 8px 1px #ccc;
+	position: relative;
+	z-index: 2000;
+}
+.head_ul li{
+	float: left;
+	width: 20%;
+}
+.head_ul li a{
+	border-left: 1px dotted #595757;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.head_ul li a:hover{
+	color: red;
+}
+.head_ul li:last-child a{
+	border-right: 1px dotted #595757;
+}
+.head_ul li a img{
+	/*text-align: center;*/
+}
+
+.menu_wrap{
+	display: none;
+}
+
+/*-------------------------------------------
+	mv
+--------------------------------------------*/
+.mv_wrap{
+	position: relative;
+}
+img.yasu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%); /* Safari用 */
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+.mv_photo{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+
+ul.slick02 li.slick-slide img{
+	width: 100%;
+}
+
+/*スライド下のドットを中央に*/
+.mv_wrap .slick-dots{
+    text-align: center;
+    margin-top: 15px;
+}
+/*dp:iしないと「中央で横並び」にならない*/
+.mv_wrap .slick-dots li {
+    margin: 0 3px;
+    display: inline-block;
+}
+/*ボタン画像をカスタマイズ*/
+.mv_wrap .slick-dots li button {
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background: url(./img/slide/dot02.gif) no-repeat;
+    width: 10px;
+    height: 10px;
+}
+/*アクティブdotを変更*/
+.mv_wrap .slick-dots .slick-active button {
+    background: url(./img/slide/dot01.gif) no-repeat;
+}
+
+@media (max-width: 767px){
+	.mv_photo{
+		height: 140px;
+	}
+}
+
+/*-------------------------------------------
+	商品詳細
+--------------------------------------------*/
+
+.det_img{
+	width: 37%;
+}
+.det_greek{
+	width: 58%;
+}
+
+.it_photo{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 370px;
+}
+.it_photo2{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 85px;
+    height: 85px;
+}
+
+.det_mds{
+	font-size: 22px;
+	color: #e60012;
+	margin-bottom: 10px;
+}
+.det_bun , .det_bun2{
+	font-size: 15px;
+	line-height: 1.7;
+}
+.det_bun{
+	margin-bottom: 20px;
+}
+.det_sale{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 20px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.det_sale p{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.det_sale p span{
+	font-size: 25px;
+	color: #e60012;
+	padding-right: 2px;
+}
+.det_ari{
+	margin-bottom: 30px;
+}
+.tcart_wrap{
+	background-color: #efefef;
+	padding: 25px;
+}
+.tcart_kazu p{
+	margin-bottom: 5px;
+}
+.tcart_kazu select{
+	/*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #d8d8d8;
+    background: #fff;*/
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+.tcart_add a{
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	background-color: #fff;
+	color: #0068b7;
+	font-size: 16px;
+	padding: 12px 0;
+	text-align: center;
+}
+.tcart_add a:hover{
+	color: #e60012;
+}
+.tcart_toi{
+	margin-top: 15px;
+}
+.tcart_toi a{
+	color: #0068b7;
+	text-decoration: underline;
+}
+.tcart_toi a:hover{
+	color: #e60012;
+}
+
+@media (max-width: 767px){
+	.det_img , .det_greek{
+		width: 100%;
+	}
+	.det_greek{
+		margin-top: 30px;
+	}
+	.tcart_wrap{
+		padding: 10px;
+	}
+	.tcart_kazu{
+		width: 15%;
+	}
+	.tcart_kazu select{
+		padding: 5%;
+	}
+	.tcart_in{
+		width: 83% !important;
+	}
+	.tcart_in a{
+		padding: 12px 0 !important;
+	}
+}
+
+/*スライド矢印_ボタン設定*/
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next{
+    position: absolute;
+    z-index: 998; 
+    top: -100px;
+    /*デフォルトでは「prev」の文字が出るので、透明にして消してる*/
+    color: transparent;
+}
+.bx_pager{
+	margin-top: 10px;
+}
+.bx_pager div{
+	float: left;
+	margin-right: 10px;
+}
+
+.tcart_in{
+	width: 90%;
+}
+.tcart_in a{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	background-image: -webkit-linear-gradient(#f9c270, #f39800);
+	background-image: -o-linear-gradient(#f9c270, #f39800);
+	background-image: linear-gradient(#f9c270, #f39800);
+	background-color: #f39800;
+	border: 1px solid #f39800;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px 0;
+	text-align: center;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.tcart_in a:hover{
+	opacity: .8;
+}
+
+@media (max-width: 767px){
+	
+	.it_photo{
+		height: 200px;
+	}
+	.it_photo2{
+		width: 60px;
+		height: 60px;
+	}
+	.itmv_r{
+		margin-top: 20px;
+	}
+}
+
+/*-------------------------------------------
+	当店の特徴
+--------------------------------------------*/
+.tomi_mds{
+     background-color: #fff;
+     color: #000;
+     width: 170px;
+     height: 170px;
+     text-align: center;
+     border-radius: 50%;
+     box-shadow: 0px 0px 8px 1px #ccc;
+     margin: 0 auto;
+     display: table;
+}
+.top_add .tomi_mds{
+	margin-top: -20px;
+}
+.tomi_mds p{
+	font-size: 26px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.tm_mds{
+	font-size: 23px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 15px 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.hp_build .tm_mds{
+	margin-top: 40px;
+}
+.hpb_txt{
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 20px 0 40px;
+}
+
+.tm_bun{
+	margin: 0 auto;
+	max-width: 700px;
+	line-height: 1.8;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.jima li{
+	float: left;
+	width: 32%;
+	margin-bottom: 30px;
+}
+
+.jima li:nth-child(3n+2){
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.jima li img.jima_a{
+	width: 100%;
+}
+.jima li h3{
+	font-size: 19px;
+	line-height: 1.5;
+	color: #000;
+	margin: 15px 0;
+	text-align: center;
+}
+.jima li p{
+	font-size: 15px;
+	color: #595757;
+	line-height: 1.5;
+}
+.tomi_concept .jima li{
+	text-align: center;
+}
+.tomi_concept .jima li img{
+	width: 70%;
+}
+.tomi_concept .jima li p{
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.i_photo{
+    background: no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+.i_name {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+}
+.ii_li .i_name{
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0px;
+}
+.ii{
+	border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.ii object a{
+	padding: 0 !important;
+	padding-top: 3px !important;
+	font-size: 13px;
+	color: red;
+	display: inline-block !important;
+}
+.ii object a:hover{
+	text-decoration: underline;
+}
+.i_bun{
+	font-size: 13px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+.i_value{
+	display: inline-block;
+	background-color: #c21b23;
+	color: #fff;
+	font-size: 16px;
+	padding: 4px 8px;
+	border-radius: 3px;
+}
+.i_value span{
+	font-size: 16px;
+}
+
+.jima li a{
+	background-color: #f6f6f6;
+	display: block;
+	padding: 10px;
+}
+.jima li a:hover .i_bun{
+	text-decoration: underline;
+}
+
+@media (max-width: 767px){
+	.hp_build .tm_mds{
+		margin-top: 20px;
+		margin-bottom: -5px;
+	}
+	.tomi_mds{
+		width: 100px;
+		height: 100px;
+	}
+	.top_add .tomi_mds{
+		margin-top: 0;
+	}
+	.tomi_mds p{
+		font-size: 16px;
+	}
+
+	.jima li{
+		width: 100%;
+		margin-bottom: 20px;
+		/*text-align: center;*/
+	}
+	.jima li:nth-child(3n+2){
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.hpb_txt{
+		font-size: 14px;
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+	
+	/*.jima li img , .jima li img.jima_c{
+		width: 80%;
+	}*/
+	.tomi_concept .jima li img{
+		width: 40%;
+	}
+	.jima li h3{
+		margin: 7px 0;
+		font-size: 15px;
+	}
+	.jima li p{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 13px;
+	}
+	.tm_mds{
+		font-size: 18px;
+	}
+	.tm_bun{
+		text-align: left !important;
+		font-size: 14px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.i_photo{
+		height: 0;
+		padding-top: 66%;
+	}
+	.i_value{
+		font-size: 14px;
+	}
+	.i_value span{
+		font-size: 13px;
+	}
+}
+
+/*-------------------------------------------
+	コンセプト
+--------------------------------------------*/
+.bg_wrap{
+	background: url('img/bg-boke.jpg') center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 80px 0 60px;
+}
+
+.faci li{
+	float: left;
+	width: 22%;
+}
+.faci li:nth-child(4n-2){
+	margin: 0 4%;
+}
+.faci li:nth-child(4n-4){
+	margin-left: 4%;
+}
+.faci li img{
+	width: 100%;
+}
+.faci li h3{
+	font-size: 24px;
+	margin: 15px 0;
+	text-align: center;
+}
+.faci li p{
+	font-size: 15px;
+	color: #595757;
+	line-height: 1.5;
+}
+
+.sv li{
+	float: left;
+	width: 49.25%;
+	margin-bottom: 15px;
+}
+.sv li:nth-child(odd){
+	margin-right: 1.5%;
+}
+.sv li img{
+	width: 100%;
+}
+
+@media (max-width: 767px){
+	.bg_wrap{
+		padding: 55px 0 20px;
+	}
+}
+
+/*-------------------------------------------
+	制限slick
+--------------------------------------------*/
+.wib01{
+	max-width: 850px;
+	margin: 0 auto;
+	position: relative;
+}
+/*スライド画像1つの長さ(上記のmax-width値にぴったりなるよう、スライド数と余白の合計値を調整)*/
+ul.slick01 li.slick-slide img{
+	width: 848px;
+	border: 1px solid #E6E6E6;
+	height: 400px;
+	object-fit: cover;
+	object-position: 100% 0;
+}
+/*矢印ボタンのベタ部分(横幅と高さ100％指定)*/
+.arrow_ul li{
+	position: absolute;
+	top: 0;
+	width: 21px;
+	height: 100%;
+	cursor: pointer;
+}
+/*矢印ベタを、はみ出させるならここで調整*/
+.arrow_ul li.prev{
+	left: -40px;
+}
+.arrow_ul li.next{
+	right: -40px;
+}
+/*a>imgの矢印画像の位置を決める*/
+.arrow_ul li.prev a{
+	position: absolute;
+	top: 40%;
+	left: -10px;
+}
+.arrow_ul li.next a{
+	position: absolute;
+	top: 40%;
+	right: -10px;
+}
+
+/*後から追加・4バナースライド用*/
+.slick03_wrap{
+	position: relative;
+}
+.slick03_wrap .arrow_ul li{
+	position: absolute;
+	top: 0;
+	width: 21px;
+	height: 100%;
+	cursor: pointer;
+}
+.slick03_wrap .arrow_ul li.prev a{
+	position: absolute;
+	top: 40%;
+	left: -10px;
+}
+.slick03_wrap .arrow_ul li.next a{
+	position: absolute;
+	top: 40%;
+	right: -10px;
+}
+ul.slick03 li.slick-slide img{
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px){
+	/*レスポンシブでは基本リスト画像は100%で(他の設定はjsでする)*/
+	ul.slick01 li.slick-slide img{
+		width: 100%;
+		height: 250px;
+	}
+	/*画面内に矢印を出す*/
+	.arrow_ul li{
+		width: 30px;
+		height: 50%;
+		background: rgba(255,255,255,.7);
+		top: -2%;
+	}
+	.arrow_ul li.prev{
+		left: 0;
+		top: 1px;
+	}
+	.arrow_ul li.next{
+		right: 0;
+		top: 1px;
+	}
+	.arrow_ul li.prev a{
+		left: 3px;
+	}
+	.arrow_ul li.next a{
+		right: 3px;
+	}
+
+	/*レスポンシブでは基本リスト画像は100%で(他の設定はjsでする)*/
+	ul.slick03 li.slick-slide img{
+		width: 100%;
+	}
+	/*画面内に矢印を出す*/
+	.slick03_wrap .arrow_ul li{
+		width: 30px;
+		height: 100%;
+		background: rgba(255,255,255,.7);
+		top: 0;
+	}
+	.slick03_wrap .arrow_ul li.prev{
+		left: 0;
+		z-index: 50;
+	}
+	.slick03_wrap .arrow_ul li.next{
+		right: 0;
+		z-index: 50;
+	}
+	.slick03_wrap .arrow_ul li.prev a{
+		left: 11px;
+	}
+	.slick03_wrap .arrow_ul li.next a{
+		right: 11px;
+	}
+	.slick03_wrap .arrow_ul li.prev a img , .slick03_wrap .arrow_ul li.next a img{
+		width: 12px;
+	}
+}
+@media (max-width: 320px){
+	.arrow_ul li{
+		height: 40%;
+	}
+}
+
+table.aji{
+	width: 100%;
+	border: 1px solid #000;
+	margin-top: 30px;
+}
+.hp_build table.aji{
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+table.aji th , table.aji td{
+	padding: 20px 0;
+}
+table.aji th{
+	width: 24%;
+}
+table.aji th p{
+	font-size: 18px;
+	color: #595757;
+}
+table.aji td{
+	width: 76%;
+}
+table.aji td p{
+	font-size: 15px;
+	color: #595757;
+	line-height: 1.7;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid #000;
+}
+
+a.kengaku{
+	display: block;
+	width: 35%;
+	margin: 0 auto;
+	background-color: #000;
+	padding: 16px 0 16px;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+}
+
+.hp_build a.kengaku{
+	margin-top: 30px;
+	font-size: 16px;
+	padding: 15px 0;
+}
+img.hpd_img{
+	border: 1px solid #E6E6E6;
+	box-sizing:border-box;
+}
+/*a.kengaku:before{
+	content: url('./img/icon_kengaku.png');
+    padding-right: 10px;
+    position: relative;
+    top: 8px;
+}*/
+
+/*-------------------------------------------
+	insta
+--------------------------------------------*/
+.insta_ul li{
+	float: left;
+	width: 15.8%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.insta_ul li:nth-child(6n-6){
+	margin-right: 0;
+}
+.insta_ul li img{
+	width: 100%;
+}
+
+/*-------------------------------------------
+	map
+--------------------------------------------*/
+.amds{
+	font-size: 18px;
+	border-left: 4px solid #000;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+.amdp{
+	font-size: 14px;
+	line-height: 1.6;
+}
+.ggmap iframe{
+	width: 100%;
+	height: 600px;
+}
+.ac2{
+	margin-left: 40px;
+}
+.am_tel{
+	font-size: 28px;
+}
+.am_tel:before{
+	content: url('./img/freedial.jpg');
+    padding-right: 5px;
+    position: relative; /*絶対配置しなければ引っ付く*/
+    top: 2px;
+}
+
+/*-------------------------------------------
+	footer
+--------------------------------------------*/
+.footer{
+	background: #000;
+	padding: 45px 0;
+}
+.footer > *{
+	color: #fff;
+	text-align: center;
+}
+.ft_mds{
+	font-size: 30px;
+	position: relative;
+	z-index: 100;
+}
+.ft_p{
+	font-size: 14px;
+	margin: 5px 0;
+}
+.ft_tel a{
+	font-size: 40px;
+	color: #fff;
+}
+.ft_tel:before{
+	content: url('./img/freedial2.png');
+    padding-right: 5px;
+    position: relative; /*絶対配置しなければ引っ付く*/
+    top: 2px;
+}
+
+/*-------------------------------------------
+	サムネイルをレスポンシブさせる
+--------------------------------------------*/
+.thumb{
+	/*text-align:center;*/
+}
+.thumb img{
+	width:auto;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+}
+.blog_once:first-child  p{
+	margin-top: 20px;
+}
+
+/*------------------------------------------------------------
+	サイドバー
+------------------------------------------------------------*/
+.sidebar_wrap{
+	float: right;
+	width: 30%;
+}
+.sidebar{
+	padding: 10px;
+	padding-bottom: 5px;
+	border: 1px solid #C1C1C1;
+	margin-bottom: 20px;
+	background: #fff;
+}
+.sidebar h3{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 3px 0;
+	padding-left: 10px;
+	border: 1px solid #c21b23;
+	color: #fff;
+	background: #c21b23;
+	/*background-image: -webkit-linear-gradient(#e9a80f, #f2bb39);
+	background-image: -o-linear-gradient(#e9a80f, #f2bb39);
+	background-image: linear-gradient(#e9a80f, #f2bb39);*/
+}
+.sidebar ul li{
+	padding: 0 10px;
+}
+.sidebar ul li a{
+	padding: 8px 0;
+	display: block;
+	border-bottom: 1px dotted #C1C1C1;
+	text-decoration: underline;
+	font-size: 13px;
+	line-height: 1.7;
+}
+.sidebar ul li:last-child a{
+	border-bottom: none;
+}
+.sidebar ul li a:hover{
+	color: red;
+}
+
+/*複数カテゴリー化に伴う文字サイズ調整*/
+.sidebar ul li.cat-post-item a{
+	font-size: 14px;
+	border-bottom: none;
+}
+@media screen and (max-width: 1006px){
+	.sidebar_wrap{
+		width: 100%;
+	}
+}
+
+/*------------------------------------------------------------
+	blog個別ページ_次へ前へボタン
+------------------------------------------------------------*/
+.blog_pager{
+	max-width: 1000px;
+	margin: 0 auto;
+	border-top: 1px solid #999;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+.blog_pager a{
+	text-decoration: underline;
+}
+.blog_pager a:hover{
+	color: red;
+}
+.hp_build .blog_pager{
+	margin: 0 auto;
+	max-width: 850px;
+	border-top-style: dotted;
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+@media (max-width: 1006px){
+	.blog_pager{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.hp_build{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+/*------------------------------------------------------------
+	個別投稿ブログ
+------------------------------------------------------------*/
+.blog_wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	font-family: source-han-sans-japanese, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+.blog_once{
+	float: left;
+	width: 65%;
+}
+.blog_once h4{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.blog_once h6{
+	color: red;
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.blog_once p , .blog_all p{
+	font-size: 16px;
+	margin-bottom: 30px;
+	line-height: 1.7;
+}
+.blog_once p a , .blog_all p a{
+	text-decoration: underline;
+	color: red;
+}
+.blog_once p span , .blog_all p span{
+	color: red;
+}
+/*これを見出し要素に*/
+.blog_once h3 , .blog_all h3{
+	border-bottom: 1px dotted red;
+	margin-top: 15px;
+	margin-bottom: -5px;
+	padding-bottom: 13px;
+	font-size: 18px;
+	color: red;
+	font-family: source-han-sans-japanese, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+}
+/*赤の見出しの「直後の」brを打ち消す*/
+.blog_once p strong + br , .blog_all p strong + br{
+	display: none;
+}
+.blog_once pre , .blog_all pre{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.blog_once pre code , .blog_all pre code{
+	font-size: 14px;
+	line-height: 1.5;
+}
+/*投稿一覧用*/
+.blog_all{
+	margin-bottom: 60px;
+}
+.blog_all h4{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.blog_all h6{
+	color: #c21b23;
+	margin-bottom: 30px;
+	font-size: 13px;
+}
+.blog_all p{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.dot_line{
+	border-bottom: 1px dotted #000;
+	margin-top: 60px;
+}
+.blog_all:last-child .dot_line{
+	border-bottom: none;
+}
+
+@media screen and (max-width: 1006px){
+	.blog_once{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.blog_all{
+		margin-bottom: 30px;
+	}
+	.blog_wrap{
+		padding: 20px;
+		padding-top: 30px;
+	}
+	.dot_line{
+		margin-top: 30px;
+	}
+	.blog_once p , .blog_all p{
+		font-size: 14px;
+		line-height: 1.7;
+		margin-top: 10px;
+	}
+}
+
+.smore{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	background-color: #DF0101;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 0;
+	text-align: center;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.smore:hover{
+	opacity: .75;
+}
+
+#link01:before{
+	content: " ";
+    margin-top: -150px;
+    height: 150px;
+    display: block;
+}
+
+/*-------------------------------------------
+	forms
+--------------------------------------------*/
+.confo_mds{
+	font-size: 18px;
+	font-weight: bold;
+	border-left: 3px solid #000;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+.confo_sub{
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 1.6;
+}
+.confo_sub a{
+	/*color: red;
+	text-decoration: underline;*/
+	pointer-events: none;
+}
+
+section.f_wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.f_dl{
+    display: table;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+.f_wrap .f_dl:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.f_dl dt , .f_dl dd{
+    display: table-cell;
+    padding: 15px 10px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.f_dl dt{
+    background-color: #f4f4f4;
+    width: 30%;
+    text-align: left;
+}
+.f_dl dt span{
+    color: red;
+}
+.f_dl dd{
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.f_dl dd p{
+    margin-top: 5px;
+}
+.f_dl dd input[type="text"],
+.f_dl dd input[type="tel"],
+.f_dl dd input[type="email"],
+.f_dl dd textarea{
+    width:98%; 
+    -webkit-box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+    -moz-box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+    box-shadow: 0 0 2px 2px rgba(200,200,200,0.5) inset;
+    padding:.3em;
+    border: 1px solid #eee;
+    font-size: 13px;
+}
+.f_dl dd label{
+    margin-right: 1em;
+}
+.f_dl dd input[type="radio"] , 
+.f_dl dd input[type="checkbox"]{
+    margin-right: .3em;
+}
+
+.checks{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.forms_btn {
+    text-align: center;
+}
+.forms_btn br{
+    display: none;
+}
+.forms_btn input{
+    padding: 15px 0;
+    width: 20%;
+    background: #949494;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 1px solid #eee;
+}
+.forms_btn input:hover{
+    opacity: .8;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.agree{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.agree br{
+	display: none;
+}
+.agree strong{
+    font-size: 13px;
+    color: #fff;
+    background: #ff0000;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+ 
+@media (max-width: 767px){
+	.confo_sub a{
+		color: red;
+		text-decoration: underline;
+		pointer-events: auto;
+	}
+    .f_dl{
+        display: block;
+    }
+    .f_dl dt , .f_dl dd{
+        display: block;
+        width: 96%;
+        padding: 15px 2%;
+    }
+    .f_dl dd{
+        border-left: none;
+    }
+    .f_dl dd input[type="text"],
+    .f_dl dd input[type="tel"],
+    .f_dl dd input[type="email"],
+    .f_dl dd textarea{
+        width: 100%;
+    }
+    
+    .forms_btn input{
+        width: 44%;
+    }
+    .agree{
+    	margin-top: 15px;
+    }
+    .agree strong{
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+/*-------------------------------------------
+  thanks
+--------------------------------------------*/
+.thanks{
+  /*border-top: 1px solid #e0dfdf;
+  padding: 50px 0;*/
+  padding-top: 10px;
+}
+.thanks h4{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.thanks p{
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8;
+}
+.thanks_a{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.thanks_a a{
+  color: red;
+  text-decoration: underline;
+}
+@media (max-width: 767px){
+  .thanks{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .thanks h4{
+    font-size: 24px;
+  }
+  .thanks p{
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+/*-------------------------------------------
+  404
+--------------------------------------------*/
+.fnot{
+  /*border-top: 1px solid #e0dfdf;*/
+  padding: 50px 0;
+}
+.fnot h4{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.fnot p{
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+.fnot_a{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.fnot_a a{
+  color: red;
+  text-decoration: underline;
+}
+@media (max-width: 767px){
+  .fnot{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .fnot h4{
+    font-size: 40px;
+  }
+}
+
+/*タグクラウドのデザイン*/
+.tagcloud a {
+ font-size: 13px !important;
+ line-height: 1em;
+ background: #808080;
+ color: #fff;
+ display: inline-block;
+ white-space: nowrap;
+ padding: 5px 8px;
+ margin-top: 7px;
+ border-radius: 4px;
+ text-decoration: none;
+ -webkit-transition: .3s;
+transition: .3s;
+}
+.tagcloud a:hover {
+ background: #bbb; /* マウスホバー時の背景色 */
+}
+
+.tagcloud a:before {
+ font-family: "Font Awesome 5 free";
+ content: "\f02b"; /* 絵文字のコード */
+ font-weight: 900;
+ padding-right: 4px;
+}
+
+
+/*-------------------------------------------
+	mq
+--------------------------------------------*/
+@media (max-width: 767px){
+	.about{
+		width: 130px;
+	}
+	.w01{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 20px;
+	}
+	.pdd1{
+		padding: 0 10px;
+	}
+
+	.ymds01{
+		font-size: 18px;
+	}
+	.yp{
+		font-size: 16px;
+	}
+	.yp2{
+		font-size: 15px;
+	}
+
+	/*header*/
+	.header_wrap , img.bt01 , img.bt02 , img.bt03{
+		display: none;
+	}
+	img.yasu{
+		width: 60%;
+		top: 40%;
+	}
+
+	/*-----sp-----*/
+	.menu_wrap{
+		display: block;
+		background: #fff;
+		box-shadow: 1px 1px 8px 1px #ccc;
+		position: relative;
+		z-index: 100;
+	}
+	.menu_btn{
+		padding: 10px 0;
+	}
+	.sp_logo{
+		font-size: 22px;
+		color: #000;
+		padding-left: 10px;
+		margin-top: 5px;
+	}
+	.bg_menu{
+		width: 35px;
+		padding-right: 10px;
+		margin-left: 3px;
+	}
+	.menu_wrap ul{
+		display: none;
+	}
+	.menu_wrap ul li a{
+		width: 100%;
+		display: block;
+		padding: 15px 0;
+		font-size: 16px;
+		background: #000;
+		color: #fff;
+		border-bottom: 1px dotted #fff;
+		text-align: center;
+	}
+	.menu_wrap ul li:last-child a{
+		border-bottom: none;
+	}
+
+	.fz_btn{
+		display: none;
+	}
+
+	/*faci*/
+	.faci li{
+		width: 100%;
+		margin-bottom: 40px;
+		/*border-bottom: 1px dotted #000;*/
+	}
+	.faci li img{
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+	.faci li:nth-child(4n-2){
+		margin: 0;
+		margin-bottom: 40px;
+	}
+	.faci li:nth-child(4n-4){
+		margin-left: 0;
+	}
+	.faci li:last-child{
+		margin-bottom: 0;
+	}
+	.faci li h3{
+		margin: 7px 0;
+	}
+	.faci li p{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.sv li{
+		width: 100%;
+	}
+	.sv li:nth-child(odd){
+		margin-right: 0;
+	}
+	.sv li:last-child{
+		margin-bottom: 0;
+	}
+
+	table.aji{
+		margin-top: 40px;
+	}
+	table.aji th , table.aji td{
+		display: block;
+		width: 100%;
+	}
+	table.aji th{
+		padding: 10px 0;
+	}
+	table.aji th p{
+		border-bottom: 1px solid #000;
+		padding-bottom: 15px;
+	}
+	table.aji td {
+		padding-top: 10px;
+	}
+	table.aji td p{
+		border-left: none;
+		font-size: 14px;
+	}
+
+	a.kengaku{
+		width: 90%;
+		padding: 15px 0;
+		font-size: 18px;
+	}
+
+	.ggmap iframe{
+		height: 200px;
+	}
+
+	.ac2{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.footer{
+		padding-bottom: 20px;
+	}
+	.ft_mds{
+		font-size: 25px;
+		position: relative;
+		z-index: 100;
+	}
+	.ft_p{
+		font-size: 12px;
+		line-height: 1.6;
+		margin: 2px 0;
+	}
+	.ft_tel a{
+		font-size: 38px;
+		color: #fff;
+	}
+}
+
+.object-fit-img {
+  object-fit: cover;
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: 100% 0;'
+}
+
+.att_wrap .blog_once{
+	width: 100%;
+}
+.att_wrap .thumb{
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+.att_link{
+	margin: 5px 0 15px;
+}
+.att_link a{
+	color: red;
+	text-decoration: underline;
+}
+.att_img img{
+	max-width: 100%;
+}
+
+@media (max-width: 767px){
+	.att_wrap .thumb{
+		font-size: 14px;
+	}
+	.bn_img img{
+		width: 100%;
+	}
+}
+
+/*---selectセレクト---*/
+.ksl_wrap{
+	margin: 0 auto;
+	max-width: 300px;
+	margin-bottom: 30px;
+}
+#kiji_sel{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    font-size: 16px;
+
+    background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-image: url(./img/ico_select.png);
+}
+
+@media (max-width: 767px){
+	.tomi_mds{
+		width: 100px;
+		height: 100px;
+	}
+	.tomi_mds p{
+		font-size: 16px;
+	}
+
+	.jima li{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.jima li:nth-child(3n+2){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.tomi_concept .jima li img{
+		width: 40%;
+	}
+	.jima li h3{
+		margin: 7px 0;
+		font-size: 15px;
+	}
+	.jima li p{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 13px;
+	}
+	.tm_mds{
+		font-size: 18px;
+	}
+	.tm_bun{
+		text-align: left !important;
+		font-size: 14px;
+	}
+
+	.i_photo{
+		height: 0;
+		padding-top: 67%;
+	}
+	.i_value{
+		font-size: 18px;
+	}
+	.i_value span{
+		font-size: 13px;
+	}
+}
+
+
