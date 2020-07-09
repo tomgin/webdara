@@ -30,8 +30,8 @@ $.autopager({
         $('#loading').css('display', 'none');
         $('#next a').css('display', 'block');
         //最後のページが出ると、ボタン消す
-        if( current.page >= maxpage ){ 
-            $('#next a').hide(); 
+        if( current.page >= maxpage ){
+            $('#next a').hide();
         }
     }
 });

@@ -987,6 +987,9 @@ img.hpd_img{
     position: relative; /*絶対配置しなければ引っ付く*/
     top: 2px;
 }
+a.top_btn:hover img{
+	opacity: 1;
+}
 
 /*-------------------------------------------
 	サムネイルをレスポンシブさせる
