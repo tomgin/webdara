@@ -1,5 +1,5 @@
 <?php get_header() ?>
-	
+
 <!-- ブログ本体 -->
 <div class="att_wrap">
 	<div class="blog_wrap clfix">
@@ -22,7 +22,7 @@
 				<img src="<?php echo $cftimg[0]; ?>" alt="<?php the_title(); ?>">
 			</div>
 		</div>
-		
+
 		<!-- <div class="sidebar_wrap">
 			<?php dynamic_sidebar(sidebar); ?>
 		</div> -->
@@ -45,5 +45,5 @@
 <!-- ループここまで -->
 
 <div class="flow_box3"></div>
-	
+
 <?php get_footer(); ?>

@@ -57,7 +57,7 @@ $(function(){
 		<!-- ループ開始 -->
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<?php 
+		<?php
 		$currentterms = get_the_terms(get_the_ID(), 'bn_tax');
 		$result = '';
 		if (!empty($currentterms)) {
@@ -71,11 +71,15 @@ $(function(){
 
 		<li class="ii_li" data-type="<?php echo $result; ?>">
 			<a href="<?php the_permalink(); ?>">
-				<?php if(get_the_post_thumbnail( $id )): //アイキャッチあれば ?>
-				<div style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);" class="i_photo"></div>
-				 <?php else: ?>
-				<div style="background-image: url('<?php bloginfo('template_directory'); ?>/img/abo_noimg.jpg');" class="i_photo"></div>
-				 <?php endif; ?>
+				<!-- 特定の画像なければnoimage出す -->
+				<?php
+				$first_img = 'https://webdara.info/wp-content/themes/webdara/img/abo_noimg.jpg';
+				$image = wp_get_attachment_image_src(get_post_meta($post->ID, 'bn_img', true),'full');
+				if ( $image[0] ) {
+				    $first_img = $image[0];
+				}
+				?>
+				<div style="background-image: url('<?php echo esc_attr( $first_img ); ?>');" class="i_photo"></div>
 				<div style="margin-bottom: 5px" class="i_name"><?php the_title(); ?></div>
 				<!-- <div class="ii">
 					<object><a href="<?php echo post_custom('att_link');?>" target="_blank"><?php echo post_custom('att_link');?></a></object>
@@ -90,7 +94,7 @@ $(function(){
 				</div>
 			</a>
 		</li>
-		
+
 		<?php endwhile; endif; ?>
 		<!-- ループ終了 -->
 	</ul>
