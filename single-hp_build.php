@@ -6,7 +6,7 @@
 
 <div class="wib01">
 	<div class="tm_mds"><?php the_title(); ?></div>
-	<div class="hpb_txt"><?php echo post_custom('hp_greek');?></div>
+	<div class="hpb_txt"><?php echo nl2br(post_custom('hp_greek'));?></div>
 
 
 	<!-- <table class="aji">
