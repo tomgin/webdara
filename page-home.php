@@ -101,7 +101,7 @@
 
 <div class="w01 tomi_concept">
 	<div class="tomi_mds mb20"><p>主な<br />カテゴリ</p></div>
-	<div class="yp2">大体この辺りの事について、<br class="brnon">記事を書いてます</div>
+	<div class="yp2">この辺りの事について、<br class="brnon">記事を書いてます</div>
 	<!-- <div style="text-align: center;" class="tm_bun mb30">ホントは他にもいろいろと試したりはしてるんだけど、<br class="brsp">結果が芳しくなかったり、イマイチ使いこなせてないツールなどはほっとく</div> -->
 
 	<!-- list -->
@@ -130,9 +130,9 @@
 **************************************** -->
 <div id="link01"></div>
 <div class="w00">
-	<div class="tomi_mds mb20"><p>手掛けた<br />サイト</p></div>
-	<div class="yp2 ">主な制作に関わったホームページです</div>
-	<div style="text-align: center;" class="tm_bun mb30">静的なサイト、Wordpressのサイトなど多数作成に携わっております。<br class="brsp">Wordpressのサイトは、動的な構築も自ら行っています。</div>
+	<div class="tomi_mds mb20"><p>制作した<br />サイト</p></div>
+	<div class="yp2 ">制作に関わったホームページです</div>
+	<div style="text-align: center;" class="tm_bun mb30">静的サイト、ランディングページ、Wordpressのサイトなど多数作成に携わっております。</div>
 </div>
 
 <!-- 制限slick -->

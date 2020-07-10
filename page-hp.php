@@ -1,9 +1,9 @@
 <?php get_header() ?>
 
 <div class="w01">
-	<div class="tomi_mds mb40"><p>手掛けた<br />サイト</p></div>
+	<div class="tomi_mds mb40"><p>制作した<br />サイト</p></div>
 
-	<div class="tm_mds">これまでに制作に携わったHPです</div>
+	<div class="tm_mds">これまでに制作に関わったHPです</div>
 
 	<!-- list -->
 	<ul class="jima clfix mb20">
