@@ -8,7 +8,7 @@
 
 <div class="footer">
 	<div class="ft_mds">Webノート</div>
-	<div class="ft_p">HP制作してて、色々悩んだことを<br class="brnon">備忘録変わりに書き留めるサイトみたいな</div>
+	<div class="ft_p">HP制作で気になることを<br class="brnon">日々記録</div>
 </div>
 
 <script>

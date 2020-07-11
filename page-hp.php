@@ -3,7 +3,7 @@
 <div class="w01">
 	<div class="tomi_mds mb40"><p>制作した<br />サイト</p></div>
 
-	<div class="tm_mds">これまでに制作に関わったHPです</div>
+	<div class="tm_mds">これまでに制作に関わった主なHPです</div>
 
 	<!-- list -->
 	<ul class="jima clfix mb20">

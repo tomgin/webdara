@@ -25,14 +25,14 @@
 **************************************** -->
 <div class="w01 top_add">
 	<div class="tomi_mds mb40"><p>このサイト<br />について</p></div>
-	<div class="ymds01">ホームページ制作での、日々のメモ書き</div>
+	<div class="ymds01">ホームページ制作での日々の記録</div>
 	<div style="text-align: center;" class="tm_bun">管理人はホームページ会社に数年勤務し、<br class="brsp">そこで日々気づいたこと、気になったことを備忘録変わりにここで紹介していきます。<br />
 	更新頻度はまちまちですが、どうかご容赦のほどを…。</div>
 
 	<div class="flow_box40"></div>
 
 	<!-- 取り扱う商品 -->
-	<div class="tm_mds">ぼちぼちと書いた記事はこちら</div>
+	<div class="tm_mds">新着記事はこちら</div>
 
 	<!-- list -->
 	<ul class="jima clfix mb20">
