@@ -201,10 +201,9 @@ img.yasu{
 	-webkit-transform: translate(-50%, -50%); /* Safari用 */
 	transform: translate(-50%, -50%);
 	z-index: 1000;
-
 	background-color: rgba(255,255,255,.9);
 	text-align: center;
-	padding: 20px 30px;
+	padding: 30px 40px;
 }
 .mvg_mds {
 	font-size: 5.5rem;
@@ -222,7 +221,7 @@ img.yasu{
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 350px;
+    height: 500px;
 }
 
 ul.slick02 li.slick-slide img{

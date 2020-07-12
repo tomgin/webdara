@@ -16,8 +16,8 @@ $(function(){
     // 制限slick2 Topのmv
 	$('.slick02').slick({
 		autoplay: true,
-		autoplaySpeed: 3500,
-		speed:1000,
+		autoplaySpeed: 5500,
+		speed:1500,
 		// variableWidth: true,
 		slidesToShow: 1,
 		arrows: false,
