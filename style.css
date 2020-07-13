@@ -196,7 +196,7 @@ img.yasu{
 }
 .mv_greek {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%); /* Safari用 */
 	transform: translate(-50%, -50%);

@@ -12,12 +12,12 @@ $(function(){
 		$(".menu_wrap ul").slideToggle();
 		return false;
 	});
-	
+
     // 制限slick2 Topのmv
 	$('.slick02').slick({
 		autoplay: true,
-		autoplaySpeed: 5500,
-		speed:1500,
+		autoplaySpeed: 5000,
+		speed: 1000,
 		// variableWidth: true,
 		slidesToShow: 1,
 		arrows: false,
