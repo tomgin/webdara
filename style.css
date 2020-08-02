@@ -47,7 +47,7 @@ html {
 	max-width: 1000px;
 }
 .w01{
-	margin-top: 80px;
+	margin-top: 130px;
 }
 .fixed_wrap .w01{
 	margin-top: 0;
@@ -466,6 +466,9 @@ ul.slick02 li.slick-slide img{
      box-shadow: 0px 0px 8px 1px #ccc;
      margin: 0 auto;
      display: table;
+}
+.top_add{
+	margin-top: 80px;
 }
 .top_add .tomi_mds{
 	margin-top: -20px;
@@ -1700,12 +1703,21 @@ transition: .3s;
 	max-width: 100%;
 }
 
+.pagenavi_wrap .wp-pagenavi{
+	padding-left: 0 !important;
+}
+
+
 @media (max-width: 767px){
 	.att_wrap .thumb{
 		font-size: 14px;
 	}
 	.bn_img img{
 		width: 100%;
+	}
+
+	.pagenavi_wrap{
+		margin-bottom: 50px;
 	}
 }
 
