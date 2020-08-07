@@ -19,7 +19,7 @@
 		<!-- ループ開始 -->
 		<?php foreach($my_posts as $post):setup_postdata($post); ?>
 
-		<li>
+		<li class="ii_li">
 			<a href="<?php the_permalink(); ?>">
 				<!-- 特定の画像なければnoimage出す -->
 				<?php
@@ -36,6 +36,10 @@
 				?>
 				<div style="background-image: url('<?php echo esc_attr( $first_img ); ?>');" class="i_photo"></div>
 				<div class="i_name"><?php the_title(); ?></div>
+				<div class="ii">
+					<?php $hp_link = get_field('hp_link'); ?>
+					<object><a href="<?php echo post_custom('hp_link');?>" target="_blank"><?php echo mb_strimwidth("$hp_link", 0, 40, "[…]"); ?></a></object>
+				</div>
 				<?php $moji = get_field('hp_greek'); ?>
 				<div class="i_bun"><?php echo mb_strimwidth("$moji", 0, 80, "[…]"); ?></div>
 				<!-- <div class="i_value"><?php echo post_custom('cate_name');?></div> -->

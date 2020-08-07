@@ -25,14 +25,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 <!-- <title>Webノート</title> -->
 <link rel="shortcut icon" href="<?php bloginfo( 'template_directory' ); ?>/favicon.ico" />
+
+<!-- css -->
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/base.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
-<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<!-- js -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/view.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/autopager.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/ofi.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.heightLine.js"></script>
@@ -71,13 +72,6 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </head>
 
 <body>
-<!-- ****************************************
-	固定バナー
-**************************************** -->
-<!-- <div class="fz_btn_wrap">
-	<a href=""><img class="bt01" src="<?php bloginfo('template_directory'); ?>/img/mv-bt01.png" alt=""></a>
-	<a href=""><img class="bt02" src="<?php bloginfo('template_directory'); ?>/img/mv-bt02.png" alt=""></a>
-</div> -->
 
 <!-- ****************************************
 	header
@@ -102,7 +96,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <!-- spメニュー -->
 <div class="menu_wrap">
 	<div class="menu_btn clfix">
-		<a href="<?php echo home_url(); ?>/"><div class="sp_logo fl">Webノート</div></a>
+		<a href="<?php echo home_url(); ?>/"><div class="sp_logo fl">Webノート<span>web production report</span></div></a>
 		<a href=""><img class="bg_menu fr" src="<?php bloginfo('template_directory'); ?>/img/menu.png" alt=""></a>
 	</div>
 	<ul class="sp_menu">

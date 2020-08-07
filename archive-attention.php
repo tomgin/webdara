@@ -52,7 +52,7 @@ $(function(){
 		<!-- ループ開始 -->
 		<?php
 		    global $query_string;
-		    query_posts( $query_string . '&posts_per_page=12' );
+		    query_posts( $query_string . '&posts_per_page=-1' );
 		?>
 		<!-- ループ開始 -->
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -96,9 +96,9 @@ $(function(){
 		<!-- ループ終了 -->
 	</ul>
 
-	<div class="pagenavi_wrap">
+	<!-- <div class="pagenavi_wrap">
 		<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-	</div>
+	</div> -->
 </div>
 
 
