@@ -4,7 +4,7 @@
 add_theme_support('post-thumbnails');
 
 // 自動でPタグ付くの回避
-remove_filter('the_content', 'wpautop');
+// remove_filter('the_content', 'wpautop');
 // remove_filter('the_excerpt', 'wpautop');
 
 // コンタクトフォーム7のPタグも消す
