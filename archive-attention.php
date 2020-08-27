@@ -26,9 +26,9 @@ $(function(){
 </script>
 
 <div class="w01">
-	<div class="tomi_mds mb40"><p>注目の<br />サイト</p></div>
+	<div class="tomi_mds mb40"><p>参考<br />サイト</p></div>
 
-	<div class="tm_mds">注目のサイト一覧</div>
+	<div class="tm_mds">参考にしたいサイトを集めてみた</div>
 
 	<div class="ksl_wrap">
 		<!-- <select name="cat-dropdown" id="kiji_sel">
@@ -39,7 +39,7 @@ $(function(){
 		<select name="cat-dropdown" id="kiji_sel">
 			<option value="">すべて</option>
 			<?php
-			$terms = get_terms( 'att_tax', 'get=all&hide_empty=0' ); 
+			$terms = get_terms( 'att_tax', 'get=all&hide_empty=0' );
 			foreach ($terms as $term): ?>
 			<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
 			<?php endforeach; ?>
@@ -57,7 +57,7 @@ $(function(){
 		<!-- ループ開始 -->
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<?php 
+		<?php
 		$currentterms = get_the_terms(get_the_ID(), 'att_tax');
 		$result = '';
 		if (!empty($currentterms)) {
@@ -91,7 +91,7 @@ $(function(){
 				</div>
 			</a>
 		</li>
-		
+
 		<?php endwhile; endif; ?>
 		<!-- ループ終了 -->
 	</ul>

@@ -401,7 +401,7 @@ ul.slick02 li.slick-slide img{
 .bx-wrapper .bx-prev,
 .bx-wrapper .bx-next{
     position: absolute;
-    z-index: 998; 
+    z-index: 998;
     top: -100px;
     /*デフォルトでは「prev」の文字が出るので、透明にして消してる*/
     color: transparent;
@@ -440,7 +440,7 @@ ul.slick02 li.slick-slide img{
 }
 
 @media (max-width: 767px){
-	
+
 	.it_photo{
 		height: 200px;
 	}
@@ -503,16 +503,20 @@ ul.slick02 li.slick-slide img{
 	margin-top: 5px;
 }
 
+.jima{
+	margin-right: -3%;
+}
 .jima li{
 	float: left;
-	width: 32%;
+	width: 31%;
 	margin-bottom: 30px;
-}
-
-.jima li:nth-child(3n+2){
-	margin-left: 2%;
 	margin-right: 2%;
 }
+
+/* .jima li:nth-child(3n+2){
+	margin-left: 2%;
+	margin-right: 2%;
+} */
 .jima li img.jima_a{
 	width: 100%;
 }
@@ -632,7 +636,7 @@ ul.slick02 li.slick-slide img{
 		margin-top: 20px;
 		margin-bottom: 25px;
 	}
-	
+
 	/*.jima li img , .jima li img.jima_c{
 		width: 80%;
 	}*/
@@ -1297,7 +1301,7 @@ section.f_wrap{
 .f_dl dd input[type="tel"],
 .f_dl dd input[type="email"],
 .f_dl dd textarea{
-    width:98%; 
+    width:98%;
     -webkit-box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
     -moz-box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
     box-shadow: 0 0 2px 2px rgba(200,200,200,0.5) inset;
@@ -1308,7 +1312,7 @@ section.f_wrap{
 .f_dl dd label{
     margin-right: 1em;
 }
-.f_dl dd input[type="radio"] , 
+.f_dl dd input[type="radio"] ,
 .f_dl dd input[type="checkbox"]{
     margin-right: .3em;
 }
@@ -1364,7 +1368,7 @@ section.f_wrap{
     border-radius: 3px;
     margin-left: 5px;
 }
- 
+
 @media (max-width: 767px){
 	.confo_sub a{
 		color: red;
@@ -1388,7 +1392,7 @@ section.f_wrap{
     .f_dl dd textarea{
         width: 100%;
     }
-    
+
     .forms_btn input{
         width: 44%;
     }
@@ -1762,15 +1766,19 @@ transition: .3s;
 		font-size: 16px;
 	}
 
+	.jima{
+		margin-right: 0;
+	}
 	.jima li{
 		width: 100%;
 		margin-bottom: 20px;
+		margin-right: 0;
 	}
 	.jima li:nth-child(3n+2){
 		margin-left: 0;
 		margin-right: 0;
 	}
-	
+
 	.tomi_concept .jima li img{
 		width: 40%;
 	}
@@ -1802,5 +1810,3 @@ transition: .3s;
 		font-size: 13px;
 	}
 }
-
-
