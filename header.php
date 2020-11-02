@@ -85,9 +85,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 			<!-- <?php $cat = get_category_by_slug('info'); ?>
 			<li><a href="<?php echo get_category_link( $cat->cat_ID );?>">記事の詳細</a></li> -->
 			<li><a href="<?php echo home_url(); ?>/hp">制作したサイト</a></li>
-			<li><a href="<?php echo home_url(); ?>/attention">参考サイト</a></li>
-			<li><a href="<?php echo home_url(); ?>/banner">参考バナー</a></li>
-			<!-- <li><a href="<?php echo home_url(); ?>/shokai">お問合わせ(予定)</a></li> -->
+			<li><a href="<?php echo home_url(); ?>/archives/attention">参考サイト</a></li>
+			<!-- <li><a href="<?php echo home_url(); ?>/banner">参考バナー</a></li> -->
+			<li><a href="<?php echo home_url(); ?>/shokai">お問合わせ</a></li>
 		</ul>
 	</div>
 	</div>
@@ -104,8 +104,8 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 		<li><a href="<?php echo home_url(); ?>/list">記事の一覧</a></li>
 		<!-- <li><a href="<?php echo home_url(); ?>/detail">記事の詳細</a></li> -->
 		<li><a href="<?php echo home_url(); ?>/hp">制作したサイト</a></li>
-		<li><a href="<?php echo home_url(); ?>/attention">参考サイト</a></li>
-		<li><a href="<?php echo home_url(); ?>/banner">参考バナー</a></li>
-		<!-- <li><a href="<?php echo home_url(); ?>/shokai">お問合わせ(予定)</a></li> -->
+		<li><a href="<?php echo home_url(); ?>/archives/attention">参考サイト</a></li>
+		<!-- <li><a href="<?php echo home_url(); ?>/banner">参考バナー</a></li> -->
+		<li><a href="<?php echo home_url(); ?>/shokai">お問合わせ</a></li>
 	</ul>
 </div>

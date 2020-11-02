@@ -1251,9 +1251,13 @@ a.top_btn:hover img{
 	margin-bottom: 15px;
 }
 .confo_sub{
-	font-size: 16px;
+	font-size: 17px;
 	margin-top: 10px;
 	line-height: 1.6;
+}
+.shokai_sub{
+	color: #828282;
+	font-size: 14px;
 }
 .confo_sub a{
 	/*color: red;
@@ -1370,6 +1374,12 @@ section.f_wrap{
 }
 
 @media (max-width: 767px){
+	.confo_sub{
+		font-size: 16px;
+	}
+	.shokai_sub{
+		font-size: 13px;
+	}
 	.confo_sub a{
 		color: red;
 		text-decoration: underline;
@@ -1380,7 +1390,7 @@ section.f_wrap{
     }
     .f_dl dt , .f_dl dd{
         display: block;
-        width: 96%;
+        width: 100%;
         padding: 15px 2%;
     }
     .f_dl dd{
