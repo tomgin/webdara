@@ -19,7 +19,7 @@
 			</div>
 			<?php $cftimg = wp_get_attachment_image_src(get_post_meta($post->ID, 'bn_img', true), 'full'); ?>
 			<div class="bn_img">
-				<img src="<?php echo $cftimg[0]; ?>" alt="<?php the_title(); ?>">
+				<img style="max-width: 100%;" src="<?php echo $cftimg[0]; ?>" alt="<?php the_title(); ?>">
 			</div>
 		</div>
 

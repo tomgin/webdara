@@ -26,9 +26,9 @@ $(function(){
 </script>
 
 <div class="w01">
-	<div class="tomi_mds mb40"><p>参考<br />バナー</p></div>
+	<div class="tomi_mds mb40"><p>デザイン<br />制作</p></div>
 
-	<div class="tm_mds">参考にしたいバナー一覧</div>
+	<div class="tm_mds">作成してみたバナー一覧</div>
 
 	<div class="ksl_wrap">
 		<!-- <select name="cat-dropdown" id="kiji_sel">
@@ -45,6 +45,11 @@ $(function(){
 			<?php endforeach; ?>
 		</select>
 
+	</div>
+
+	<div class="wake_wrap">
+		<div class="wake_mds"><span>注）</span>これらは商業制作物ではありません</div>
+		<div class="wake_txt">ここに掲載してあるバナーは、自分自身のデザインの勉強として作成したもので、商業用の制作物ではありません。実在の会社の情報やロゴなどが使われていますが、あくまでデザインスキルのポートフォリオですので、ご了承ください。</div>
 	</div>
 
 	<!-- list -->

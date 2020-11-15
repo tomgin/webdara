@@ -1820,3 +1820,31 @@ transition: .3s;
 		font-size: 13px;
 	}
 }
+
+/* mainVisual
+------------------------------------ */
+.wake_wrap {
+	margin: 0 auto;
+	max-width: 510px;
+	margin-bottom: 40px;
+}
+.wake_wrap span{
+	font-size: 1.7rem;
+	margin-right: -5px;
+}
+.wake_mds {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: red;
+	margin-bottom: 10px;
+}
+.wake_txt {
+	font-size: 1.4rem;
+	line-height: 2;
+}
+
+
+
+
+
+
