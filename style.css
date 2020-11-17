@@ -1829,7 +1829,7 @@ transition: .3s;
 	margin-bottom: 40px;
 }
 .wake_wrap span{
-	font-size: 1.7rem;
+	/*font-size: 1.7rem;*/
 	margin-right: -5px;
 }
 .wake_mds {
